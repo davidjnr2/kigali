@@ -15,8 +15,11 @@ ul li {
 
 
 img{
-    width: 20px;
-    height: 20px;
+    border-radius: 20px;
+    padding: 5px;
+    height: 200px;
+    width: 320px;
+    margin: 0 5px;
 }
 
 p{
@@ -25,3 +28,4 @@ p{
     font-weight: bolder;
     margin: 0 50px;
 }
+
