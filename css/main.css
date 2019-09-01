@@ -1,5 +1,6 @@
 * {
   font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
 }
 
 .application {
@@ -65,39 +66,18 @@ li.dropdown {
 
 /* Partners section */
 .Partners{
+  width: 100%;
+  padding: 0 10%;
   font-family:Roboto;
   text-align: center;
   padding-bottom: 70px;
 }
-.Partners h3{
-  font-size:32px;
-}
+
 .partners-description {
-  font-size: 2vw;
+  text-align: justify;
+  font-size: 1.3em;
 }
 
-.partners-description span {
-  color: #000000;
-}
-
-#HNG{
-  width:250px;
-  display: inline;
-  margin-top: 20px;
-}
-#Flutterwave{
-  width:250px;
-  display: inline;
-  margin-top: 20px;
-  margin-left: 45px;
-
-}
-#StartNG{
-  width:120px;
-  display: inline;
-  margin-top: 20px;
-  margin-left: 45px;
-}
 
 
 /* The team */
@@ -195,74 +175,31 @@ section {
     padding: 0;
 }
 
-.column b {
-    font-size: 22px;
-}
-
-.column p {
-    font-size: 22px;
-    text-align: center;
+.column {
+  text-align: center;
+  font-size: 1.3em;
 }
 
 .container {
-    width: 1100px;
-    margin: 50px auto 0;
-    display: table;
-    box-sizing: border-box;
-}
-
-.row {
-    margin: 10px 0;
-}
-
-.column {
-    display: table-cell;
-    padding: 10px;
-    width: 33.33%;
-    text-align: center;
-    vertical-align: middle;
-    border-right: 10px solid white;
+    width: 100%;
+    padding: 0 10%;
 }
 
 
-.section-1 {
+
+.section-1-header {
     text-align: center;
     text-transform: uppercase;
-    font-size: 30px;
+    font-size: 2em;
     font-weight: bolder;
-
+}
+.section-1-header::after{
+  content: "";
+ display: block;
+  border-bottom: solid 3px red;
 }
 
-@media (max-width: 800px) {
-    .container {
-        margin: 10px;
-        padding: 10px;
-        width: 100%;
 
-    }
-
-    .column {
-        width: 100%;
-        display: block;
-        margin: 10px 0;
-        border: none;
-    }
-
-    .row {
-        margin: 0;
-    }
-
-    .column b {
-        font-size: 18px;
-    }
-
-    .column p {
-        font-size: 15px;
-    }
-    .section-1 {
-        font-size: 15px;
-    }
-}
 
 .column img {
     width: 60px;
@@ -315,4 +252,83 @@ input{
 }
 #phone{
     margin-top: -5px;
+}
+
+@media screen and (min-width: 320px) {
+
+  .column {
+      width: 100%;
+      display: block;
+      margin: 0;
+      border: none;
+  }
+
+  .row {
+    width: 100%;
+      margin: 0;
+  }
+
+
+  .flex{
+    display:block;
+    width:80%;
+    margin: auto;
+  }
+  .flex img{
+    width: 100%;
+    margin: 10% 0;
+  }
+
+  .the-team{
+    display: block;
+  }
+
+  .team-lead{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 5%;
+  }
+
+}
+
+@media screen and (min-width:768px){
+  .opportunity{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .column{
+    width: 30%;
+  }
+
+  .flex{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around; 
+  }
+  
+  .flex img{
+    width: 20%;
+  }
+
+  .the-team {
+    background-color: rgb(246, 246, 246);
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .team-lead {
+    margin: 15px;
+    border: 1px solid rgb(246, 246, 246);
+    background-color: white;
+    height: 25%;
+    width: 25%;
+    border-radius: 6px;
+    box-shadow: 0px 1px 6px rgba(0,0,0,0.02);
+  }
 }
