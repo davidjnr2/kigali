@@ -254,6 +254,21 @@ input{
     margin-top: -5px;
 }
 
+
+/* About Page  starts here     */
+
+#about-wrapper{
+  width: 100%;
+}
+#about-wrapper h3{
+  text-align: center;
+  text-transform: uppercase;
+}
+.about-desc h3::after{
+  content: "";
+  display: block;
+  border-bottom: solid 3px red;
+}
 @media screen and (min-width: 320px) {
 
   .column {
@@ -288,6 +303,19 @@ input{
     margin: auto;
     margin-bottom: 5%;
   }
+
+  /* About page*/
+ #about-wrapper{
+   width: 100%;
+   padding: 2.5%;
+   font-size: 1em;
+ }
+ .about-item aside{
+  width: 100%;
+}
+.about-item img{
+  width: 100%;
+}
 
 }
 
@@ -330,5 +358,30 @@ input{
     width: 25%;
     border-radius: 6px;
     box-shadow: 0px 1px 6px rgba(0,0,0,0.02);
+  }
+
+  /*About page*/
+  #about-wrapper{
+    font-size: 1.2em;
+  }
+  .about-item{
+    width: 100%;
+    padding: 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .about-item aside{
+    width: 30%;
+  }
+  .about-desc{
+    width: 40%;
+  }
+  .about-item img{
+    width: 100%;
+  }
+  .about-item aside, .about-desc{
+    margin: 0 2.5%;
   }
 }
